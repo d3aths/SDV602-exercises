@@ -1,6 +1,5 @@
 # A simple guess the number game
 
-
 def get_guess():
     
     # Input a prompted guess that is a number
@@ -9,8 +8,9 @@ def get_guess():
     while True:
         try:
             test = input("Guess a number> ")
-            result = float(test)
-            if type(test) == str:
+            if type(test) == int:
+                result = float(test)
+            elif type(test) == str:
                 result = str(test)
             break
         except:
@@ -21,4 +21,4 @@ def get_guess():
 if __name__ == "__main__":
     print('Your input is {}'.format(get_guess()))
 
-    # not working, dont understand what is wanted from the "formatting your output"
+    # dont understand what is wanted from the "formatting your output but this takes a str and int"
