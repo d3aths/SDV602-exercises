@@ -50,7 +50,7 @@ def multiple_plots(**kwargs):
     ax.plot(years, convictions_m)
     ax.plot(years, convictions_m, "or")
 
-    return plt.gcf()
+    # return plt.gcf()
 
     plt.show()
 
