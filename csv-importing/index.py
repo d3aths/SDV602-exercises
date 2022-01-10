@@ -5,7 +5,7 @@ import numpy as np
 
 
 def display_csv_pandas():
-    df = pd.read_csv('nz-convictions (copy).csv')
+    df = pd.read_csv('https://newsimland.com/~todd/hs21.csv')
     print(df)
 
 def transpose(table_csv, skip_if_empty = True):
@@ -56,4 +56,4 @@ def multiple_plots(**kwargs):
 
 # runs code
 if __name__ == '__main__':
-   multiple_plots()
+   display_csv_pandas()
